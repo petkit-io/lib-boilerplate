@@ -1,0 +1,38 @@
+{
+  "name": "@petkit/ngx-lib-boilerplate",
+  "version": "1.0.0",
+  "description": "ngx lib boilerplate",
+  "main": "index.js",
+  "scripts": {
+    "version": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0 && git add CHANGELOG.md",
+    "commitmsg": "commitlint -e $GIT_PARAMS"
+  },
+  "ngPackage": {
+    "dest": "../../../dist/ngx-lib-boilerplate",
+    "lib": {
+      "entryFile": "public-api.ts",
+      "umdModuleIds": {}
+    },
+    "whitelistedNonPeerDependencies": []
+  },
+  "peerDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/petkit-io/ngx-lib-boilerplate.git"
+  },
+  "keywords": [
+    "ngx",
+    "boilerplate"
+  ],
+  "author": "liuxin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/petkit-io/ngx-lib-boilerplate/issues"
+  },
+  "homepage": "https://github.com/petkit-io/ngx-lib-boilerplate#readme",
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  }
+}
